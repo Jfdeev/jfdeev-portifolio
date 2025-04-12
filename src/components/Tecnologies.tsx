@@ -6,6 +6,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi"; 
 import { SiSpring } from "react-icons/si";
 
 
@@ -40,6 +41,9 @@ const Tecnologies = () => {
                 </div>
                 <div className="rounded-2xl border-4 border-neutral-800 p-4">
                     <SiSpring className="text-7xl text-green-400" />
+                </div>
+                <div className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <BiLogoPostgresql className="text-7xl text-sky-700" />
                 </div>
             </div>
         </div>
