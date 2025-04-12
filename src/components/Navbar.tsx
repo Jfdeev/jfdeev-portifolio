@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="py-6">
+    <nav className="py-6 ">
       <div className="container mx-auto hidden md:flex items-center justify-between">
         <div>
           <img src={logo} alt="logo" />

@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Tecnologies from "./components/Tecnologies";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
             <Navbar />
             <Hero />
             <About />
+            <Tecnologies />
           </div>
     </div>
   );
