@@ -21,7 +21,7 @@ const Navbar = () => {
               className="relative transition-transform duration-300 ease-in-out group"
             >
               Inicio
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-sky-600 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
             </a>
           </li>
           <li>
@@ -30,7 +30,7 @@ const Navbar = () => {
               className="relative transition-transform duration-300 ease-in-out group"
             >
                 Sobre
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-sky-600 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
             </a>
           </li>
           <li>
@@ -38,8 +38,8 @@ const Navbar = () => {
               href="#"
               className="relative transition-transform duration-300 ease-in-out group"
             >
-              Servicos
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-sky-600 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
+              Tecnologias
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
             </a>
           </li>
           <li>
@@ -47,8 +47,8 @@ const Navbar = () => {
               href="#"
               className="relative transition-transform duration-300 ease-in-out group"
             >
-              Portifolio
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-sky-600 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
+              Experiência
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
             </a>
           </li>
           <li>
@@ -57,7 +57,7 @@ const Navbar = () => {
               className="relative transition-transform duration-300 ease-in-out group"
             >
               Contato
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-sky-600 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
             </a>
           </li>
         </ul>
