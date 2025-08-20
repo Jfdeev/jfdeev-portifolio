@@ -1,9 +1,9 @@
 import { useState } from "react";
-import logo from "../assets/logoJf.svg";
 import { FaLinkedin, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import { BiMoon } from "react-icons/bi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +11,10 @@ const Navbar = () => {
   return (
     <nav className="py-6 ">
       <div className="container mx-auto hidden md:flex items-center justify-between">
-        <div>
-          <img src={logo} alt="logo" />
+        <div className="flex items-center justify-center gap-4 bg-zinc-700 p-2 rounded-full border border-neutral-600">
+          {/* Bottao para trocar tema para dark e ligth */}
+          <BiMoon className="text-2xl text-zinc-100 cursor-pointer" />
+         
         </div>
         <ul className="flex gap-8 text-white">
           <li>
@@ -109,7 +111,11 @@ const Navbar = () => {
       {/* Navbar para telas mobile */}
       <div className="container mx-auto md:hidden flex flex-col">
         <div className="flex items-center justify-between">
-          <img src={logo} alt="logo" />
+          <div className="flex items-center justify-center gap-4 bg-zinc-700 p-2 rounded-full border border-neutral-600">
+            {/* Bottao para trocar tema para dark e ligth */}
+            <BiMoon className="text-2xl text-zinc-100 cursor-pointer" />
+          </div>
+          {/* Botão de menu */}
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <IoMdClose size={24} /> : <HiMenu size={24} />}
           </button>

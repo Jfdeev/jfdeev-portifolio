@@ -10,9 +10,20 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     year: "2025 - Até o momento",
+    role: "Desenvolvedor Full Stack · Dti digital",
+    description: `Atuando no desenvolvimento de aplicações `,
+  },
+  {
+    year: "2025 - 07/2025",
+    role: "Estagiário de Desenvolvimento Frontend · Tucupy",
+    description: `Atuando no desenvolvimento de interfaces de usuário para aplicações web, utilizando React.js e Next.js. Colaboração com a equipe de design para implementar layouts responsivos e otimização de performance.`,
+    technologies: ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Node.js"],
+  },
+  {
+    year: "2025 - 06/2025",
     role: "Estagiário de TI, Desenvolvedor · Prodepa",
     description: `Atuando no desenvolvimento de soluções internas, automatizações e suporte técnico à equipe. Participação em projetos de modernização digital e uso de tecnologias modernas como React, Node.js e bancos de dados SQL.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB", "PostgreSQL"],
+    technologies: ["Javascript", "React.js", "Next.js", "PostgreSQL"],
   },
   {
     year: "2024 - 2025",
