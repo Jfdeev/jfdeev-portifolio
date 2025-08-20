@@ -12,6 +12,7 @@ export const EXPERIENCES = [
     year: "2025 - Até o momento",
     role: "Desenvolvedor Full Stack · Dti digital",
     description: `Atuando no desenvolvimento de aplicações `,
+    technologies: ["React.js", "Next.js", "Node.js", "TypeScript", "Tailwind CSS"],
   },
   {
     year: "2025 - 07/2025",
