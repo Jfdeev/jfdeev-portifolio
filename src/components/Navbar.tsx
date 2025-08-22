@@ -9,60 +9,65 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="py-6 ">
+    <nav className="py-6">
       <div className="container mx-auto hidden md:flex items-center justify-between">
         <div className="flex items-center justify-center gap-4 bg-zinc-700 p-2 rounded-full border border-neutral-600">
           {/* Bottao para trocar tema para dark e ligth */}
           <BiMoon className="text-2xl text-zinc-100 cursor-pointer" />
-         
         </div>
-        <ul className="flex gap-8 text-white">
-          <li>
-            <a 
-              href="#"
-              className="relative transition-transform duration-300 ease-in-out group"
-            >
-              Inicio
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
-            </a>
-          </li>
-          <li>
-          <a 
-              href="#"
-              className="relative transition-transform duration-300 ease-in-out group"
-            >
+
+        {/* Links de navegação com efeito luminoso */}
+        <div className="flex items-center bg-zinc-800 border border-neutral-700 p-2 rounded-full">
+          <ul className="flex gap-5 text-zinc-200 font-semibold">
+            <li className="relative group">
+              {/* Efeito luminoso suave e minimalista */}
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-0 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent group-hover:w-full transition-all duration-500 ease-out opacity-0 group-hover:opacity-60"></div>
+              <a 
+                href="#"
+                className="px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
+              >
+                Inicio
+              </a>
+            </li>
+            <li className="relative group">
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-0 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent group-hover:w-full transition-all duration-500 ease-out opacity-0 group-hover:opacity-60"></div>
+              <a 
+                href="#"
+                className="px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
+              >
                 Sobre
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
-            </a>
-          </li>
-          <li>
-            <a 
-              href="#"
-              className="relative transition-transform duration-300 ease-in-out group"
-            >
-              Tecnologias
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
-            </a>
-          </li>
-          <li>
-            <a 
-              href="#"
-              className="relative transition-transform duration-300 ease-in-out group"
-            >
-              Experiência
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
-            </a>
-          </li>
-          <li>
-            <a 
-              href="#"
-              className="relative transition-transform duration-300 ease-in-out group"
-            >
-              Contato
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-slate-500 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+            <li className="relative group">
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-0 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent group-hover:w-full transition-all duration-500 ease-out opacity-0 group-hover:opacity-60"></div>
+              <a 
+                href="#"
+                className="px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
+              >
+                Servicos
+              </a>
+            </li>
+            <li className="relative group">
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-0 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent group-hover:w-full transition-all duration-500 ease-out opacity-0 group-hover:opacity-60"></div>
+              <a 
+                href="#"
+                className="px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
+              >
+                Projetos
+              </a>
+            </li>
+            <li className="relative group">
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-0 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent group-hover:w-full transition-all duration-500 ease-out opacity-0 group-hover:opacity-60"></div>
+              <a 
+                href="#"
+                className="px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
+              >
+                Contato
+              </a>
+            </li> 
+          </ul>
+        </div>
+        
         {/* Ícones das redes sociais */}
         <ul className="flex gap-4 text-2xl text-white">
           <li>
@@ -117,7 +122,7 @@ const Navbar = () => {
           </div>
           {/* Botão de menu */}
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <IoMdClose size={24} /> : <HiMenu size={24} />}
+            {isOpen ? <IoMdClose size={24} className="text-white" /> : <HiMenu size={24} className="text-white" />}
           </button>
         </div>
         {isOpen && (
@@ -156,7 +161,7 @@ const Navbar = () => {
               href="#"
               className="relative transition-transform duration-300 ease-in-out group"
             >
-              Portifolio
+              Projetos
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-sky-600 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100 origin-left"></span>
             </a>
               </li>
