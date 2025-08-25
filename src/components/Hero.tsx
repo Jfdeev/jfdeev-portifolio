@@ -4,7 +4,7 @@ import { HERO_CONTENT } from "../constants";
 const Hero = () => {
   return (
     <section className="pt-16 pb-8 lg:mb-36">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 lg:px-20">
         <div className="flex flex-col-reverse lg:flex-row items-start gap-8">
           {/* Left: texto */}
           <div className="w-full lg:w-1/2">
